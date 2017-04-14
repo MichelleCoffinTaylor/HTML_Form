@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>HTML Forms</h1>
+	<form id="" class="" action="sucess.html" method="POST" enctype="multipart/form-data">
+	<!-- GET is unsecure and shows the values in the URL -->
+	<!-- POST is secure and the values get put into a POST Variable -->
+
+		<!-- INPUTS -->
+
+		<!-- Text -->
+		<h2>Text</h2>
+		<label for="first-name">First Name:</label>
+		<input type="text" name="first-name" placeholder="First Name" autofocus><br>
+		<!-- Adding Autofocus will automatically select the first field when the form is opened -->
+
+		<label for="last-name">Last Name:</label>
+		<input type="text" name="last-name" placeholder="Last Name">
+
+		<!-- Number -->
+		<h2>Number</h2>
+		<label for="age">Age</label>
+		<input type="number" name="age" min="0" max="10" step="2" value="6">
+
+		<!-- Password -->
+		<h2>Password</h2>
+		<label for="password">Password</label>
+		<input type="password" name="password" required>
+		<!-- Adding Required to password means that you have to enter this input field -->
+
+		<!-- File -->
+		<h2>File</h2>
+		<label for="file">File</label>
+		<input type="file" name="file" multiple>
+		<!-- Adding Mutiple means you can add mutiple files without having to continuosily opening the finder window -->
+
+		<!-- Reset -->
+		<h2>Reset</h2>
+		<label for="reset">Reset</label>
+		<input type="reset" name="reset">
+
+		<!-- Radio -->
+		<h2>Radio</h2>
+		<label for="radio"></label>
+		<input type="radio" name="gender">Male<br>
+		<input type="radio" name="gender">Female<br>
+		<input type="radio" name="gender">Other<br>
+		<input type="radio" name="gender">Prefer not to say not say
+
+		<!-- Check Box -->
+		<h2>Check Box</h2>
+		<label for="checkbox">What is your favourite fruit from the following:</label><br>
+		<input type="checkbox" name="fruit1" checked>Apple<br>
+		<input type="checkbox" name="fruit2">Banana<br>
+		<input type="checkbox" name="fruit3">Orange
+		<!-- Adding checked to check boxes will automatically check the current/selected box -->
+
+		<!-- Email -->
+		<h2>Email</h2>
+		<label for="email">Email</label>
+		<input type="email" name="email">
+
+		<!-- Color -->
+		<h2>Color</h2>
+		<label for="color">Color</label>
+		<input type="color" name="color">
+
+		<!-- Date -->
+		<h2>Date</h2>
+		<label for="date">Date</label>
+		<input type="date" name="date">
+
+		<!-- Date Time Local -->
+		<h2>Datetime-local</h2>
+		<label for="datetime-local">Datetime-local</label>
+		<input type="datetime-local" name="datetime-local">
+
+		<!-- Month -->
+		<h2>Month</h2>
+		<label for="month">Month</label>
+		<input type="month" name="month">
+
+		<!-- Time -->
+		<h2>Time</h2>
+		<label for="time">Time</label>
+		<input type="time" name="time">
+
+		<!-- Week -->
+		<h2>Week</h2>
+		<label for="week">Week</label>
+		<input type="week" name="week">
+
+		<!-- URL -->
+		<h2>URL</h2>
+		<label for="url">URL</label>
+		<input type="url" name="url">
+
+		<!-- Phone/Tel -->
+		<h2>Phone/Tel</h2>
+		<label for="tel">Tel</label>
+		<input type="tel" name="tel">
+
+		<!-- range -->
+		<h2>Range</h2>
+		<label for="range">Range</label>
+		<input type="range" name="range" min="0" max="100">
+
+		<!-- Text Area -->
+		<h2>Text Area</h2>
+		<label for="textarea">Text Area</label><br>
+		<textarea cols="50" rows="10">Please Enter Text Here...</textarea>
+
+		<!-- Select -->
+		<h2>Select</h2>
+		<label for="select">Select</label><br>
+		<select name="chooseValue">
+			<option vlaue="">Please Select an Option</option>
+			<option value=1>Value 1</option>
+			<option value="2">Value 2</option>
+			<option value="3">Value 3</option>
+			<option value="4">Value 4</option>
+		</select>
+
+		<!-- Button -->
+		<h2>Button</h2>
+		<label for="button">Button</label><br>
+		<button type="button" name="button">Click Me</button>
+
+		<!-- Disabled -->
+		<h2>Disabled</h2>
+		<label for="first-name">First Name</label><br>
+		<input type="text" name="first-name" placeholder="Please Enter your First Name"><br>
+		<label for="user-name">User Name</label><br>
+		<input type="text" name="user-name" disabled>
+
+		<!-- Required -->
+		<h2>Required</h2>
+		<label for="password">Password</label>
+		<input type="password" name="password" required>
+
+		<!-- Submit is the input field which submits the form. It is usually at the end of the form. -->
+		<input type="submit" value="Sign Up"></form>
+	</form>
+</body>
+</html>
